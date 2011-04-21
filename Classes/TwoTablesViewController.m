@@ -99,6 +99,8 @@
 
 
 - (void)dealloc {
+	[aList release];
+	[bList release];
 	[aTable release];
 	[bTable release];
     [super dealloc];
